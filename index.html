@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub Universe 2026: announcements recap</title>
+  <meta name="description" content="Everything announced at GitHub Universe 2026, with short screen recordings of the new features running against a live sandbox.">
+  <meta property="og:title" content="GitHub Universe 2026: announcements recap">
+  <meta property="og:description" content="Copilot app, Copilot Fusion, projects, automations, code review Max, stacked PRs, issue artifacts, AI Scan, package firewall and more, with live recordings.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/hero.jpg">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23f0f6fc' d='M12 1C5.92 1 1 5.92 1 12c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53v-1.86c-3.06.67-3.71-1.47-3.71-1.47-.5-1.27-1.22-1.61-1.22-1.61-1-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.58 1.2 3.2.91.1-.71.38-1.2.7-1.47-2.44-.28-5.01-1.22-5.01-5.44 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.91 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.13 3.02-1.13.6 1.51.22 2.63.11 2.91.7.77 1.13 1.75 1.13 2.95 0 4.23-2.58 5.16-5.03 5.43.4.34.75 1.01.75 2.04v3.02c0 .29.2.64.76.53A11 11 0 0 0 23 12c0-6.08-4.92-11-11-11z'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/MonaSansVF.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="GitHub Universe 2026 recap, back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1C5.92 1 1 5.92 1 12c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53v-1.86c-3.06.67-3.71-1.47-3.71-1.47-.5-1.27-1.22-1.61-1.22-1.61-1-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.58 1.2 3.2.91.1-.71.38-1.2.7-1.47-2.44-.28-5.01-1.22-5.01-5.44 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.91 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.13 3.02-1.13.6 1.51.22 2.63.11 2.91.7.77 1.13 1.75 1.13 2.95 0 4.23-2.58 5.16-5.03 5.43.4.34.75 1.01.75 2.04v3.02c0 .29.2.64.76.53A11 11 0 0 0 23 12c0-6.08-4.92-11-11-11z"/></svg>
+      Universe 2026
+    </a>
+    <ul>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#copilot">Copilot</a></li>
+      <li><a href="#platform">Platform</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#infrastructure">Infrastructure</a></li>
+      <li><a href="#availability">Availability</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">GitHub Universe 2026 · Announcements recap</div>
+    <h1>Evolving every layer <span>of the stack</span></h1>
+    <p class="lede">What GitHub shipped for developers and their agents, from idea to completed software. Each feature comes with a short recording of it running against a live sandbox.</p>
+    <div class="cta">
+      <a class="btn primary" href="#copilot">See the announcements</a>
+      <a class="btn" href="#availability">Availability at a glance</a>
+    </div>
+    <div class="meta">Keynote · October 28, 2026</div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- VISION -->
+<section id="vision">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">01 · The vision</div>
+      <h2>Completed work, not more code</h2>
+      <p>GitHub's goal: the most comprehensive end-to-end software delivery system in the world, built for developers and their agents.</p>
+    </div>
+    <div class="timeline" aria-label="How the developer's job has changed">
+      <div><b class="c-blue">Then</b><span>Writing every line of code</span></div>
+      <div><b class="c-blue">Recently</b><span>Working with AI assistants</span></div>
+      <div><b class="c-purple">Now</b><span>Orchestrating fleets of agents</span></div>
+    </div>
+    <blockquote class="quote">
+      <p>The goal hasn't changed: ship completed software work. A feature, a bug fix, a security fix. Completed work, not more code, is the output that matters.</p>
+      <cite>Jay Parikh, EVP CoreAI at Microsoft</cite>
+    </blockquote>
+    <div class="grid g3">
+      <div class="card" style="--accent: var(--green)"><h3>Velocity</h3><p>Get from idea to completed software as quickly, efficiently, and cost-effectively as possible.</p></div>
+      <div class="card" style="--accent: var(--purple)"><h3>Intelligence</h3><p>Combine context across the platform with a continuous learning engine, so the system gets better as you use it.</p></div>
+      <div class="card" style="--accent: var(--blue)"><h3>Quality</h3><p>Make completed work secure by default and catch bugs before they ship.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COPILOT -->
+<section id="copilot">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow c-purple">02 · GitHub Copilot</div>
+      <h2>Agent-first, multi-model, everywhere you work</h2>
+      <p>Developers set direction and stay accountable. Agents implement and verify. Here's what's new.</p>
+    </div>
+
+    <article class="feature" id="fusion">
+      <div class="copy">
+        <div class="tag"><span class="eyebrow c-purple" style="margin:0">Copilot Fusion</span></div>
+        <h3>Choose the effort. Copilot picks the models.</h3>
+        <p>Fusion is a runtime router and orchestrator. It reads what a task needs (reasoning, code generation, debugging, tool use) and picks how to run it.</p>
+        <div class="levels">
+          <div><b class="c-blue">Standard</b>Everyday work, one model per task</div>
+          <div><b class="c-purple">High</b>Complex bugs, multi-file changes</div>
+          <div><b class="c-pink">Max</b>Deepest reasoning, still token-aware</div>
+        </div>
+        <ul>
+          <li><strong>Single:</strong> one model completes the task.</li>
+          <li><strong>Cascade:</strong> an efficient model drafts; a judge accepts or escalates.</li>
+          <li><strong>Critique:</strong> parallel critiques are aggregated, then the draft is revised.</li>
+        </ul>
+        <p class="stat">Fusion Max scored within 2 points of Opus 5.5 Max on the Artificial Analysis Coding Agent Index, at <strong>half the cost</strong> and <strong>40% less time</strong> per task.</p>
+      </div>
+      <figure class="player">
+        <div class="frame"><video controls muted playsinline preload="metadata" poster="media/03-copilot-fusion.jpg"><source src="media/03-copilot-fusion.mp4" type="video/mp4"></video></div>
+        <figcaption><b>Recorded live</b> Copilot CLI with Fusion: a quick Standard question, then Max fixes a pricing bug end to end, runs the tests, and opens a PR.</figcaption>
+      </figure>
+    </article>
+
+    <article class="feature flip" id="copilot-app">
+      <div class="copy">
+        <div class="tag"><span class="eyebrow c-purple" style="margin:0">GitHub Copilot app</span><span class="pill preview">PROJECTS IN PUBLIC PREVIEW</span></div>
+        <h3>From issue to merge, in one app</h3>
+        <p>An agent-first surface for the whole job: specs, design discussions, telemetry analysis, and code.</p>
+        <ul>
+          <li><strong>Copilot projects:</strong> give Copilot a goal. It runs parallel, managed sessions across one or more repositories and checks in when it needs you.</li>
+          <li><strong>Session continuity:</strong> start a cloud session from your phone at standup, steer it from VS Code, check on it from github.com. The agent keeps working in the cloud.</li>
+          <li><strong>Connected context:</strong> pull in Slack threads, Figma designs, and meeting notes.</li>
+          <li><strong>Image generation</strong> in chat, and <strong>computer use</strong> (preview, macOS and Windows) for desktop apps with no API, with your approval first.</li>
+        </ul>
+      </div>
+      <div class="grid g2">
+        <div class="card" style="--accent: var(--purple)"><span class="pill preview">PREVIEW</span><h3>Projects</h3><p>One home for a goal's context, agents, and results. Results such as pull requests come back for your review.</p></div>
+        <div class="card" style="--accent: var(--blue)"><h3>Session continuity</h3><p>The same cloud agent session in the Copilot app, VS Code, Copilot CLI, GitHub Mobile, and github.com.</p></div>
+        <div class="card" style="--accent: var(--pink)"><h3>Images in chat</h3><p>Generate and edit images with natural language.</p></div>
+        <div class="card" style="--accent: var(--orange)"><span class="pill preview">PREVIEW</span><h3>Computer use</h3><p>Copilot reads and drives desktop apps after you approve. Organizations can turn it off.</p></div>
+      </div>
+    </article>
+
+    <article class="feature" id="automations">
+      <div class="copy">
+        <div class="tag"><span class="eyebrow c-purple" style="margin:0">Automations</span><span class="pill ga">AGENTIC WORKFLOWS GA</span></div>
+        <h3>Automations that learn from their outcomes</h3>
+        <p><strong>Copilot automations</strong> run Copilot cloud agent on a schedule, on repository events (issue created, PR opened or synchronized), or from the API. You choose exactly which GitHub and MCP tools each one can use, whether it's personal or shared, and an AI credit cap. Automation groups share context and propose improvements for you to approve.</p>
+        <p><strong>GitHub Agentic Workflows</strong> is now generally available: write automation in Markdown, compile it to GitHub Actions. Agents are read-only by default, sandboxed behind the Agent Workflow Firewall, and every proposed change goes through safe outputs and a threat detection job.</p>
+      </div>
+      <div>
+        <figure class="player">
+          <div class="frame"><video controls muted playsinline preload="metadata" poster="media/05a-agentic-workflow.jpg"><source src="media/05a-agentic-workflow.mp4" type="video/mp4"></video></div>
+          <figcaption><b>Recorded live</b> A triage workflow in Markdown, compiled with <code>gh aw compile</code>, pushed, and triggered by a new issue.</figcaption>
+        </figure>
+        <figure class="player">
+          <div class="frame"><video controls muted playsinline preload="metadata" poster="media/05b-agentic-workflow-result.jpg"><source src="media/05b-agentic-workflow-result.mp4" type="video/mp4"></video></div>
+          <figcaption><b>Result</b> The agent labeled the issue and left one triage note, using only the outputs the workflow allows.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="feature flip" id="code-review">
+      <div class="copy">
+        <div class="tag"><span class="eyebrow c-purple" style="margin:0">Copilot code review</span><span class="pill preview">MAX IN PREVIEW</span><span class="pill ga">APPROVALS GA</span></div>
+        <h3>Max reviews, approvals, and Agent Merge</h3>
+        <p>More code means more pull requests. Lite and Balanced keep everyday reviews fast. <strong>Max</strong> runs several independent review agents across models from different providers and reconciles their findings. It posted the highest F1 score on ReviewBench for high-severity issues.</p>
+        <ul>
+          <li><strong>Copilot approvals</strong> can count toward required reviews. Off by default, scoped by file path.</li>
+          <li><strong>Agent Merge</strong> watches your pull request and fixes blockers such as failing Actions workflows and merge conflicts. Choose <em>Watch and fix</em> in the merge box.</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="player">
+          <div class="frame"><video controls muted playsinline preload="metadata" poster="media/06a-code-review-request.jpg"><source src="media/06a-code-review-request.mp4" type="video/mp4"></video></div>
+          <figcaption><b>Recorded live</b> A risky auth change goes up as a PR and Copilot is requested as a reviewer from the CLI.</figcaption>
+        </figure>
+        <figure class="player">
+          <div class="frame"><video controls muted playsinline preload="metadata" poster="media/06b-code-review-result.jpg"><source src="media/06b-code-review-result.mp4" type="video/mp4"></video></div>
+          <figcaption><b>Result</b> Copilot's review comments on the same PR, read back with <code>gh</code>.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="feature" id="connectors">
+      <div class="copy">
+        <div class="tag"><span class="eyebrow c-purple" style="margin:0">Connectors</span><span class="pill preview">PUBLIC PREVIEW</span></div>
+        <h3>Connect once, use your tools everywhere</h3>
+        <p>GitHub-verified MCP servers. Pick a service, sign in, and you're done: no server to install and no credentials to manage. A connection works across the Copilot app, Copilot CLI, VS Code, Copilot in the cloud, code review, and GitHub Mobile.</p>
+        <p>26 services at launch, including Slack, Figma, Notion, Sentry, Linear, Atlassian Rovo, Cloudflare, Vercel, and Work IQ.</p>
+      </div>
+      <div class="grid g2">
+        <div class="card" style="--accent: var(--purple)"><h3>Copilot app</h3><p><code>Customize → Connect</code></p></div>
+        <div class="card" style="--accent: var(--blue)"><h3>Copilot CLI</h3><p><code>/mcp → Connectors tab</code></p></div>
+        <div class="card" style="--accent: var(--green)"><h3>VS Code</h3><p><code>Agents window → Customizations</code></p></div>
+        <div class="card" style="--accent: var(--orange)"><h3>github.com</h3><p>Copilot customization page</p></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PLATFORM -->
+<section id="platform">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow c-blue">03 · Platform</div>
+      <h2>Reviewable changes, findable thinking</h2>
+      <p>Collaboration primitives for humans and agents.</p>
+    </div>
+
+    <article class="feature" id="stacked-prs">
+      <div class="copy">
+        <div class="tag"><span class="eyebrow c-blue" style="margin:0">Stacked pull requests</span><span class="pill preview">PUBLIC PREVIEW</span></div>
+        <h3>Break complex work into changes everyone can follow</h3>
+        <p>Split a large change into focused, linked pull requests. Each one targets the layer below it, so reviewers see one focused diff at a time. Review each independently, then merge the whole stack in one click.</p>
+        <ul>
+          <li><code>gh extension install github/gh-stack</code></li>
+          <li><code>gh stack init</code>, <code>gh stack add</code>, <code>gh stack submit</code></li>
+          <li>Teach your agents with <code>gh skill install github/gh-stack</code></li>
+        </ul>
+      </div>
+      <figure class="player">
+        <div class="frame"><video controls muted playsinline preload="metadata" poster="media/01-stacked-prs.jpg"><source src="media/01-stacked-prs.mp4" type="video/mp4"></video></div>
+        <figcaption><b>Recorded live</b> A product-reviews feature built as three layers (model, API, UI) and submitted as a linked stack of PRs.</figcaption>
+      </figure>
+    </article>
+
+    <article class="feature flip" id="artifacts">
+      <div class="copy">
+        <div class="tag"><span class="eyebrow c-blue" style="margin:0">Media + issue artifacts</span><span class="pill ga">--ATTACH GA</span><span class="pill preview">ARTIFACTS PREVIEW</span></div>
+        <h3>Keep the screenshot and the plan with the work</h3>
+        <p>GitHub CLI's repeatable <code>--attach</code> flag uploads images and videos inline into issues, pull requests, and comments.</p>
+        <p><strong>Issue artifacts</strong> attach plans, research, links, and HTML visualizations to an issue, with version history, so your team and your agents share the same context. Copilot app sessions attach their artifacts automatically; <code>gh issue artifact</code> manages them from the terminal.</p>
+      </div>
+      <figure class="player">
+        <div class="frame"><video controls muted playsinline preload="metadata" poster="media/02-attach-and-artifacts.jpg"><source src="media/02-attach-and-artifacts.mp4" type="video/mp4"></video></div>
+        <figcaption><b>Recorded live</b> A bug filed with an inline screenshot, then a fix plan, an HTML flow diagram, and a docs link attached as artifacts.</figcaption>
+      </figure>
+    </article>
+
+    <div class="grid g3" style="margin-top: 20px">
+      <div class="card" style="--accent: var(--orange)"><span class="pill new">NEW</span><h3>Pull requests view</h3><p>Scan open work across a repository, see its status, and jump into what needs you next.</p></div>
+      <div class="card" style="--accent: var(--blue)"><h3>Actions</h3><p>Multi-cloud compute for GitHub-hosted runners, and workflow lockfiles are generally available.</p></div>
+      <div class="card" style="--accent: var(--purple)"><h3>Models</h3><p>GPT-6.1 Terra is generally available in Copilot for everyday agentic coding and terminal work.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECURITY -->
+<section id="security">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow c-pink">04 · Security</div>
+      <h2>Secure by default, whoever wrote the code</h2>
+      <p>Find and fix vulnerabilities in any language, stop secrets that patterns miss, and keep risky packages off your machines and runners.</p>
+    </div>
+
+    <article class="feature" id="security-demo">
+      <div class="copy">
+        <div class="tag"><span class="eyebrow c-pink" style="margin:0">Find and fix</span><span class="pill preview">PUBLIC PREVIEW</span></div>
+        <h3>AI Scan, AI-app scanning, and the security extension</h3>
+        <ul>
+          <li><strong>AI Scan for repositories:</strong> scan a whole repository on demand, including languages CodeQL doesn't cover. Time-boxed for bounded cost. Findings land in code scanning next to CodeQL, without duplicates, and you can assign the backlog to Copilot.</li>
+          <li><strong>Code scanning for AI applications:</strong> detects indirect prompt injection (XPIA), sensitive information disclosure, excessive agency, and more.</li>
+          <li><strong>Security extension</strong> for the Copilot app: review what you and your agents just wrote next to your code scanning alerts, ask Copilot to explain and fix, then review each change.</li>
+          <li><strong>Reachability analysis</strong> (JavaScript and TypeScript): shows whether your code actually calls the vulnerable function in a dependency, so you fix what's reachable first.</li>
+        </ul>
+      </div>
+      <figure class="player">
+        <div class="frame"><video controls muted playsinline preload="metadata" poster="media/07-security.jpg"><source src="media/07-security.mp4" type="video/mp4"></video></div>
+        <figcaption><b>Recorded live</b> Code scanning alerts and Dependabot alerts on an intentionally vulnerable sandbox app, and a hard-coded password caught by AI secret detection.</figcaption>
+      </figure>
+    </article>
+
+    <div class="grid g3" style="margin-top: 8px">
+      <div class="card" style="--accent: var(--pink)"><span class="pill preview">PREVIEW</span><h3>AI push protection</h3><p>A classifier built with Microsoft Applied Sciences blocks unstructured secrets, like passwords, at push time. In early results it more than doubled the pushes where push protection caught a secret.</p></div>
+      <div class="card" style="--accent: var(--orange)"><span class="pill preview">PREVIEW</span><h3>Package firewall</h3><p>Blocks malicious, vulnerable, and brand-new npm versions before agents, runners, or IDEs install them, with cooldown periods and advisory checks.</p></div>
+      <div class="card" style="--accent: var(--green)"><span class="pill ga">GA</span><h3>Public monitoring</h3><p>Enterprises get alerted when their secrets are exposed publicly anywhere on GitHub.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INFRASTRUCTURE + BUSINESS -->
+<section id="infrastructure">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow c-orange">05 · Infrastructure and business</div>
+      <h2>Rebuilding the foundation for agent scale</h2>
+      <p>Capacity alone isn't enough; the architecture is changing too. Added so far this year:</p>
+    </div>
+    <div class="stats">
+      <div><b class="c-green">4M</b><span>CPU cores</span></div>
+      <div><b class="c-purple">160 PB</b><span>high-speed storage</span></div>
+      <div><b class="c-blue">50 Tb/s</b><span>network capacity</span></div>
+    </div>
+    <div class="grid g2" style="margin-bottom: 18px">
+      <div class="card" style="--accent: var(--orange)"><h3>Multi-region Azure</h3><p>GitHub is migrating to a multi-region deployment in Azure while serving record traffic, expected to complete early next year.</p></div>
+      <div class="card" style="--accent: var(--green)"><h3>Agent-scale Git</h3><p>A new Git architecture built on three principles: simplify the primitives, decouple storage from compute, and minimize coordination.</p></div>
+    </div>
+    <div class="callout">
+      <div class="eyebrow c-orange">Business</div>
+      <h3>All of Copilot in GitHub Enterprise</h3>
+      <p>GitHub Enterprise customers can use every Copilot feature, including the Copilot app, code review, and automations, without a separate subscription. You pay for the AI credits you use. Available through GitHub Sales now, with self-serve coming soon. Copilot Business and Enterprise customers can keep their plans or move when ready.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AVAILABILITY -->
+<section id="availability">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Reference</div>
+      <h2>Availability at a glance</h2>
+      <p>Status as announced on October 28, 2026. Check the GitHub changelog for plan requirements and updates.</p>
+    </div>
+    <table class="avail">
+      <thead><tr><th scope="col">Feature</th><th scope="col">Area</th><th scope="col">Status</th></tr></thead>
+      <tbody>
+        <tr><td>Copilot projects</td><td>Copilot app</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td>Computer use</td><td>Copilot app</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td>Copilot Fusion</td><td>Copilot</td><td><span class="pill new">NEW</span></td></tr>
+        <tr><td>Copilot automations</td><td>Copilot</td><td><span class="pill new">NEW</span></td></tr>
+        <tr><td>GitHub Agentic Workflows</td><td>Actions</td><td><span class="pill ga">GA</span></td></tr>
+        <tr><td>Code review Max</td><td>Copilot</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td>Copilot approvals</td><td>Copilot</td><td><span class="pill ga">GA</span></td></tr>
+        <tr><td>Connectors</td><td>Copilot</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td>Stacked pull requests</td><td>Platform</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td><code>gh --attach</code></td><td>GitHub CLI</td><td><span class="pill ga">GA</span></td></tr>
+        <tr><td>Issue artifacts</td><td>Platform</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td>AI Scan for repositories</td><td>Security</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td>Code scanning for AI apps</td><td>Security</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td>Security extension</td><td>Security</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td>AI push protection</td><td>Security</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td>Package firewall</td><td>Supply chain</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td>Reachability analysis</td><td>Supply chain</td><td><span class="pill preview">PUBLIC PREVIEW</span></td></tr>
+        <tr><td>Public monitoring</td><td>Security</td><td><span class="pill ga">GA</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <div class="eyebrow">Beyond the first 1%</div>
+    <p class="big">All the software we've written to date will amount to less than 1% of the software we'll write in the next five years.</p>
+    <p style="color: var(--muted)">Jay Parikh, GitHub Universe 2026</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <p><strong style="color: var(--fg)">Unofficial recap.</strong> Summarized from GitHub's public Universe 2026 announcements. Recordings were made against a private sandbox repository with intentionally buggy sample code. Feature names, status, and availability can change; check the sources.</p>
+    </div>
+    <ul>
+      <li><a href="https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/">Keynote recap (GitHub Blog)</a></li>
+      <li><a href="https://github.com/events/universe/recap">Universe announcements</a></li>
+      <li><a href="https://github.blog/changelog/">GitHub Changelog</a></li>
+      <li><a href="https://docs.github.com/copilot">Copilot docs</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  // Highlight the nav link for the section in view.
+  const links = [...document.querySelectorAll('.nav ul a')];
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      links.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('main section[id]').forEach((s) => io.observe(s));
+</script>
+</body>
+</html>
