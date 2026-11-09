@@ -128,6 +128,8 @@ section { padding: 96px 0 40px; }
 .player { margin: 0; }
 .player .frame { background: #0d1117; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(171,125,248,.06); }
 .player video { display: block; width: 100%; height: auto; aspect-ratio: 1440 / 760; background: #0d1117; }
+.player.ui video { aspect-ratio: 16 / 10; background: #fff; }
+.player figcaption b.ui { color: var(--blue); }
 .player figcaption { margin-top: 12px; font-size: 14px; color: var(--muted); }
 .player figcaption b { font-family: var(--mono); font-size: 11px; color: var(--green); letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; margin-right: 8px; }
 .player + .player { margin-top: 28px; }
